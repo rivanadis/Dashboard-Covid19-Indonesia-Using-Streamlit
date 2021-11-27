@@ -18,7 +18,7 @@ def load_data_perprovinsi(prov):
     respon_data_prov = requests.get(f"https://data.covid19.go.id/public/api/prov_detail_{prov}.json").json()
     return respon_data_prov
 
-st.set_page_config(page_title="Data Covid-19 Per Provinsi", layout="wide")
+st.set_page_config(page_title="Data Covid-19 Per Provinsi", layout="wide", page_icon="🧊")
 
 st.title('Data COVID-19 Per Provinsi di Indonesia')
 
