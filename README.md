@@ -2,4 +2,4 @@
 
 Aplikasi latihan menggunakan Streamlit
 
-Data Covid-19 didapatkan melalui API dari https://https://data.covid19.go.id/
+Data Covid-19 didapatkan melalui API dari https://data.covid19.go.id/
