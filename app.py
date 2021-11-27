@@ -139,7 +139,7 @@ with col3:
 
 st.markdown("<hr/>", unsafe_allow_html=True)
 
-px.set_mapbox_access_token('pk.eyJ1IjoicXM2MjcyNTI3IiwiYSI6ImNraGRuYTF1azAxZmIycWs0cDB1NmY1ZjYifQ.I1VJ3KjeM-S613FLv3mtkw')
+px.set_mapbox_access_token(key token mapbox) # use your mapbox token 
 peta = px.scatter_mapbox(lokasi, lat='lat', lon='lon', hover_name='key', size='penambahan.positif', hover_data=['penambahan.positif', 'penambahan.sembuh','penambahan.meninggal'], 
                         color='penambahan.positif',zoom=8, height=800,color_discrete_sequence=['orange'],color_continuous_midpoint=50)
 peta.update_layout( margin={"r":0,"l":0,"b":0}, title={'text':"Peta dan Penambahan Kasus",'x':0.5}, autosize=True)
