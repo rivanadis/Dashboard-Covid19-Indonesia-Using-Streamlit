@@ -137,6 +137,8 @@ with col2:
 with col3:
     st.plotly_chart(bar_meninggal,use_container_width=True)
 
+st.markdown("<hr/>", unsafe_allow_html=True)
+
 px.set_mapbox_access_token('pk.eyJ1IjoicXM2MjcyNTI3IiwiYSI6ImNraGRuYTF1azAxZmIycWs0cDB1NmY1ZjYifQ.I1VJ3KjeM-S613FLv3mtkw')
 peta = px.scatter_mapbox(lokasi, lat='lat', lon='lon', hover_name='key', size='penambahan.positif', hover_data=['penambahan.positif', 'penambahan.sembuh','penambahan.meninggal'], 
                         color='penambahan.positif',zoom=8, height=800,color_discrete_sequence=['orange'],color_continuous_midpoint=50)
